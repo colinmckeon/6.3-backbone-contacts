@@ -7,8 +7,11 @@ $(function(){
 
   var contactCollection = new models.ContactCollection();
   var contactFormView = new views.ContactFormView({collection: contactCollection});
-
   contactFormView.setElement($('#contact-form')[0]);
+
+  var formSubmittalView = new views.FormSubmittalView({collection: contactCollection});
+  formSubmittalView.setElement($('#contact-form')[0]);
+
 
 
 }); //global function end
