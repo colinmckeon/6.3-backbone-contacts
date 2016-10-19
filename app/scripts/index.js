@@ -12,6 +12,7 @@ $(function(){
   var formSubmittalView = new views.FormSubmittalView({collection: contactCollection});
   formSubmittalView.setElement($('#contact-form')[0]);
 
-
+contactCollection.fetch();
+console.log(contactCollection);
 
 }); //global function end
