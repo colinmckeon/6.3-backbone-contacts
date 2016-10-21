@@ -12,6 +12,9 @@ $(function(){
   var formSubmittalView = new views.FormSubmittalView({collection: contactCollection});
   formSubmittalView.setElement($('#contact-form')[0]);
 
+  var contactListView = new views.ContactListView({collection: contactCollection});
+  $('#contact-list').append(contactListView.render().el);
+
 contactCollection.fetch();
 console.log(contactCollection);
 
