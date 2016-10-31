@@ -11,7 +11,7 @@ var Contact = Backbone.Model.extend({
 
 var ContactCollection = Backbone.Collection.extend({
     model: Contact,
-    url: 'https://tiny-lasagna-server.herokuapp.com/collections/mckcontacts'
+    url: 'https://tiny-lasagna-server.herokuapp.com/collections/mckcontactss'
 });
 
 
